@@ -5,6 +5,8 @@
 # $Id: inquiry.py 401 2006-05-05 19:07:48Z albert $
 #
 
+#If you are getting errors running this, sudo apt-get install bluetooth.
+
 import bluetooth
 
 print("performing inquiry...")
