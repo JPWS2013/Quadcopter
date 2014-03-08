@@ -1,4 +1,4 @@
- file: rfcomm-client.py
+#file: rfcomm-client.py
 # auth: Albert Huang <albert@csail.mit.edu>
 # desc: simple demonstration of a client application that uses RFCOMM sockets
 #       intended for use with rfcomm-server
@@ -11,7 +11,7 @@ import sys
 if sys.version < '3':
     input = raw_input
 
-addr = None
+addr = '00:02:72:CD:06:CC'
 
 if len(sys.argv) < 2:
     print("no device specified.  Searching all nearby bluetooth devices for")
