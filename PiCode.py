@@ -33,7 +33,9 @@ print("Accepted connection from ", client_info)
 try:
     while True:
         data = client_sock.recv(1024)
-        if data.lower() == "end": break
+        if data.lower() == "end": 
+        	print ("shutting everything down")
+        	break
         print("received [%s]" % data)
         #Process data here, and send stuff to the arduino
         if data == "1":
