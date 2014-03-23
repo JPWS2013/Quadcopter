@@ -45,7 +45,7 @@ while True:
     if len(data) == 0: break
     sock.send(data)
     print("Received Message")
-    data = client_sock.recv(1024)
+    data = sock.recv(1024)
     print(data)
 
 sock.close()
