@@ -8,3 +8,20 @@ http://people.csail.mit.edu/rudolph/Teaching/Articles/BTBook.pdf
 
 Bluetooth Address 1: 00:02:72:CD:06:CC
 Bluetooth Address 2: 00:02:72:CD:06:C3
+
+So the bluetooth client and server test scripts don't work unless you change the config file. The link for what to change is here:
+
+http://stackoverflow.com/questions/14618277/rfcomm-without-pairing-using-pybluez-on-debian/14827036#14827036
+
+What you do is in the commandline:
+
+sudo gedit /etc/bluetooth/main.conf
+
+Then the configuration file will open in geddit.
+
+From there you change DisablePlugins = pnat
+(note: this is commented out, you'll have to uncomment it too)
+
+Then you restart bluetooth
+
+sudo invoke-rc.d bluetooth restart
