@@ -6,7 +6,6 @@
 
 from bluetooth import *
 import sys
-import string
 
 if sys.version < '3':
     input = raw_input
@@ -34,7 +33,7 @@ print("Accepted connection from ", client_info)
 try:
     while True:
         data = client_sock.recv(1024)
-        if string.lower(data) == "end": break
+        if data.lower() == "end": break
         print("received [%s]" % data)
         #Process data here, and send stuff to the arduino
         if data == "1":

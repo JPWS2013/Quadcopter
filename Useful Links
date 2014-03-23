@@ -3,11 +3,17 @@ Like I said... Useful Links
 
 1. http://people.csail.mit.edu/albert/bluez-intro/c212.html
 
+----------------------------------------------------------------------------
+
 a nice textbook pdf that explains bluetooth:
 http://people.csail.mit.edu/rudolph/Teaching/Articles/BTBook.pdf
 
+
+----------------------------------------------------------------------------
 Bluetooth Address 1: 00:02:72:CD:06:CC
 Bluetooth Address 2: 00:02:72:CD:06:C3
+
+----------------------------------------------------------------------------
 
 So the bluetooth client and server test scripts don't work unless you change the config file. The link for what to change is here:
 
@@ -24,4 +30,13 @@ From there you change DisablePlugins = pnat
 
 Then you restart bluetooth
 
-sudo invoke-rc.d bluetooth restart
+sudo invoke-rc.d bluetooth
+
+----------------------------------------------------------------------------
+
+For caching the github password (using an https link to the repository):
+
+https://help.github.com/articles/set-up-git#password-caching
+
+
+
