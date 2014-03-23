@@ -42,7 +42,7 @@ sock.connect((host, port))
 print("connected.  type stuff")
 while True:
     data = input()
-    if len(data) == 0: break
+    if string.lower(data) == "end": break
     sock.send(data)
     print("Received Message")
     data = sock.recv(1024)
